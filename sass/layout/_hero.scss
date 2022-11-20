@@ -1,10 +1,9 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    /* display:flex; */
+    
+    padding-top: 118px;
     background-color:#C4C4C4 ;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 100%;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -12,23 +11,81 @@
     rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img33.jpg);
+    url(../../images/heromob-x1.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+         rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+         ),
+         url(../../images/heromob-x2.jpg);
+}
+    @media screen and (min-width:768px) {
+        padding-top: 118px; 
+        background-image: linear-gradient(
+   to right,
+    rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/herotab-x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+         rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+         ),
+         url(../../images/herotab-x2.jpg);
+}
+ }
+    @media screen and (min-width: 1200px){
+        padding-top: 200px;
+    padding-left: 60px;
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+   to right,
+    rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/img33.jpg)
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+         rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+         ),
+         url(../../images/herodeskt-x2.jpg);
+}
 }
 
 .hero .hero__title {
     color: var(--background);
 font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+font-size: 26px;
+line-height: 1.62;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+@media screen and (min-width: 1200px){
+font-size: 44px;
+line-height: 1.36; 
+}
 }
 .hero__title{
-    width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        min-width: 696px;
+        } 
 }
