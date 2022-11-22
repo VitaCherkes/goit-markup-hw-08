@@ -1,11 +1,17 @@
 .section + .work-img{
     display: none;
     padding-top: 0px;
+    @media screen and (min-width: 1200px){
+        display: flex; }
 }
 .work{
     display: none;
   gap: 30px;
+  @media screen and (min-width: 1200px){
+    display: flex; }
+    
 }
+
 .work-li{
     position: relative;
 }
