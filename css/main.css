@@ -5,6 +5,13 @@
   padding-right: 93px;
 }
 
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .accent {
   color: var(--accent-color);
 }
@@ -50,12 +57,10 @@
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
 }
 
 .site-nav .site-nav__link {
@@ -100,10 +105,8 @@
 
 /* auth-nav */
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
+  display: none;
 }
 
 .site-nav__link, .auth-nav__link {
@@ -154,6 +157,12 @@
 
 .auth-nav__icon:focus, .auth-nav__icon:hover {
   color: var(--accent-color);
+}
+
+.menu-open {
+  width: 40px;
+  height: 40px;
+  position: absolute;
 }
 
 .footer {
