@@ -9,6 +9,7 @@
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-right: 276px;
   }
 }
 
@@ -162,7 +163,17 @@
 .menu-open {
   width: 40px;
   height: 40px;
-  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.open-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .footer {

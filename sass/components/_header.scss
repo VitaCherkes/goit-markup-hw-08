@@ -5,6 +5,7 @@
 @media screen  and (min-width: 480px){
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-right: 276px;
 }
 }
 .accent{
@@ -32,10 +33,12 @@ padding-bottom: 25px;
 .header-navigation{
     display: flex;
     align-items: center;
+    
 }
 .header__container{
     display: flex;
     align-items: center;
+  
 }
 .site-nav{
     // display: flex;
@@ -135,5 +138,15 @@ margin-right: 10px;
 .menu-open{
    width: 40px;
    height: 40px;
+background-color: transparent;
+padding: 0;
+border: none;
 
-position: absolute;}
+display: flex;
+   
+}  
+.open-icon{
+    width: 40px;
+    height: 40px;
+  
+}
