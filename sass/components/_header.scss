@@ -158,7 +158,12 @@ display: flex;
     position: fixed;
     z-index: 1;
     padding-bottom: 48px;
-}
+    > .mob-container {
+        height: 100%;
+        display: flex;flex-direction: column;
+        justify-content: space-between;
+    }}
+
 .mob-container{
     padding-left: 40px;
     
@@ -187,12 +192,16 @@ display: flex;
     letter-spacing: 0.02em; 
     color: #212121;
     text-decoration: none;
+    @media screen  and(max-width: 380px){
+     font-size: 8vw;   
+    }
    
 }
 .mob__navigation:not(:last-child){
  margin-bottom: 32px;
 }
 .mob-contact__tel{
+    display: block;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -200,7 +209,11 @@ font-size: 34px;
 line-height:calc(40 / 34) ;
 letter-spacing: 0.02em;
 
-color: #2196F3;}
+color: #757575;
+margin-bottom: 32px;
+@media screen  and(max-width: 380px){
+    font-size: 7vw;   
+   }}
 .mob-contact_link{
 font-family: 'Roboto';
 font-style: normal;
@@ -212,4 +225,25 @@ text-decoration: none;
 color: #757575;}
 .mob-soc_list{
     display: flex;
+    gap: 10px;
+    padding-top: 64px;
+}
+.mob-soc_link{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+.mob-li::before{
+position: absolute;
+content: "";
+left: -10px;
+height: 22px;width: 2px;background-color: rgba(33, 33, 33, 0.2);;
+}
+.mob-li:not(:first-child){
+    margin-left: 10px;
+    position: relative;
 }
