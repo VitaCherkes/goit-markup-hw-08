@@ -17,7 +17,7 @@
         <div class="container header__container">
             <nav class="header-navigation">
             <a href="./index.html" class="logo"><span class="accent">Web</span><span class="accent__studio">Studio</span></a>
-            <button type="button" class="menu-open"><svg class="open-icon"><use href="./images/symbol-defs — 1.svg#icon-menu">
+            <button type="button" class="menu-open" data-menu-open><svg class="open-icon"><use href="./images/symbol-defs — 1.svg#icon-menu">
             </use></svg></button>
             <ul class="site-nav">
                 <li class="site-nav__navigation"><a href="./index.html" class="site-nav__link current">Студія</a></li>
@@ -34,10 +34,10 @@
             </use></svg>+38 096 111 11 11</a></li>
         </ul>
     </div>
-    <div class="mob-menu">
+    <div class="mob-menu is-hidden" data-menu>
         <div class="mob-container">
         <div class="mob-menu__top">
-            <button type="button" class="menu-close"><svg class="close-icon"><use href="./images/symbol-defs — 1.svg#icon-close_40px">
+            <button type="button" class="menu-close" data-menu-close><svg class="close-icon"><use href="./images/symbol-defs — 1.svg#icon-close_40px">
             </use></svg></button>
         <ul class="mob-site_nav">
             <li class="mob__navigation"><a href="./index.html" class="mob-nav__link current">Студія</a></li>
@@ -240,6 +240,6 @@
             </form>
         </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body></html>
