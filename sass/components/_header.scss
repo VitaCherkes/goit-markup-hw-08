@@ -7,11 +7,15 @@
     padding-bottom: 16px;
     padding-right: 276px;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px){
     padding-top: 26px;
     padding-bottom: 26px; 
     padding: 0;
     margin-right: 88px;
+ }
+ @media screen and (min-width: 1200px){
+    padding: 0;
+    margin-right: 93px;
  }
 }
 .accent{
@@ -25,8 +29,9 @@ font-family: Raleway;
 font-weight: 700;
 font-size: 24px;
 line-height: 1.19;
-// padding-top: 24px;
-// padding-bottom: 25px;
+@media screen and (min-width: 1200px){
+   font-size: 26px;
+ }
 }
 
 
@@ -68,6 +73,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:focus {
     color: var(--accent-color);
 }
+padding-top: 32px;
+padding-bottom: 32px;
+@media screen and (min-width: 1200px){
+  font: size 14px;
+ }
 }
 
 .site-nav__navigation{ 
@@ -101,15 +111,23 @@ position: relative;
     @media screen and (min-width: 768px){
         display: block; 
      }
-}
+     @media screen and (min-width: 1200px){
+        display: flex; 
+}}
 .site-nav__link, .auth-nav__link{
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .auth-nav__tel{
-//     margin-left: 50px;
-// }
+.auth-nav__tel{
+    display: block;
+    // margin-left: 50px;
+    margin-top: 10px;
+    @media screen and (min-width: 1200px){
+       margin-left: 40px;
+       margin-top: 0;
+     }
+}
 .auth-nav__link, .link {
     color: var(--primary-text-color);
 font-weight: 500;
@@ -126,20 +144,33 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .site-nav__link, .auth-nav__link{
     color: var(--primary-text-color);
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
+
 
 .icon-tel{
     width: 10px;
     // height: 16px;
     height: 14px;
-    
-    
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+    height: 16px;
+    } 
 }
 .icon-mail{
     // width: 16px;
     // height: 12px;
     width: 14px;
     height: 10px;
+    @media screen and (min-width: 1200px) {
+     width: 16px;
+    height: 12px;
+    }
 }
 .auth-nav__icon{
 fill: currentColor;
@@ -150,6 +181,9 @@ margin-right: 8px;
 &:hover{
     color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+    margin-right: 10px;
+   }
 }
 
 // mob-menu//////////////
@@ -192,7 +226,7 @@ display: flex;
         display: flex;flex-direction: column;
         justify-content: space-between;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 767px){
         display: none; 
      }}
 
